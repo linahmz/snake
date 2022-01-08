@@ -109,6 +109,8 @@ class Jeu():
                         #print("H")
                 
             self.L.append(self.dir)
+            if len(self.L) > 2:
+                del(self.L[0])
 
             if self.serpent_position_x < 0 or self.serpent_position_x > 800 or self.serpent_position_y < 80 or self.serpent_position_y > 590:
                 self.perdu = True
@@ -179,7 +181,7 @@ class Jeu():
     def game_over(self,tete_du_serpent):
         # si le serpent se mord la queue
             if self.taille == 2:
-                if (self.L[-1],self.L[-2]) == ("D","G") or (self.L[-1],self.L[-2]) == ("G","D") or (self.L[-1],self.L[-2]) == ("H","B") or (self.L[-1],self.L[-2]) == ("B","H") :
+                if (self.L[0],self.L[1]) == ("D","G") or (self.L[0],self.L[1]) == ("G","D") or (self.L[0],self.L[1]) == ("H","B") or (self.L[0],self.L[1]) == ("B","H") :
                     
                     self.jeu_encours = False
                     self.perdu = True
