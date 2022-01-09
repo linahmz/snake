@@ -169,7 +169,7 @@ class Jeu():
     
     def afficher_pomme_et_serpent(self):
         
-        self.ecran.fill((255,232,238)) # le remplissage de l'écran est indiqué dans cette boucle car il doit tout le temps être mis à jour pour qu'on puisse voir correctement le mouvement du serpent
+        self.ecran.fill((255,232,238))
    
         #afficher la pomme
         pygame.draw.circle(self.ecran,(255,0,0),(self.pomme_x + 5,self.pomme_y + 5),5)
