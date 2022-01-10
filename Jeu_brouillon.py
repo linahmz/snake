@@ -216,7 +216,7 @@ class Jeu():
             font = pygame.font.SysFont('timesnewroman',30,False)
         
         elif font == 'grande':
-                font = pygame.font.SysFont('timesnewroman',40,False)
+            font = pygame.font.SysFont('timesnewroman',40,False)
 
         message = font.render(message,True,couleur)
 
