@@ -261,14 +261,6 @@ if __name__ == '__main__':
     Jeu().fonction_principale()
     pygame.quit()
 
-#corriger quand le serpent sort de la zone (fait)
-#corriger les dimensions du messages (fait)
-#regarder ce qu'est 'lato' (c'est une police)
-#ajouter une image en fond d'écran et une musique (la musique non finalement)
-#comprendre si je ne peux pas enlever le sys (je peux)
-# essayer de rendre le code plus claire
-# afficher le score à la fin de la partie, et donner la possibilité au joueur de recommencer une partie
-
 #instruction utilisée au début pour afficher un carré du serpent
 #pygame.draw.rect(self.ecran,(27,79,8),(self.serpent_position_x, self.serpent_position_y,self.serpent_dimension,self.serpent_dimension))
 
